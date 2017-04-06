@@ -1,0 +1,41 @@
+@model IEnumerable<ASPNETCore_Core.Models.EncoreMatch>
+
+<p>
+    <a asp-controller="EncoreMatches" asp-action="Create" asp-route-id="@ViewData["EncoreID"]">Create New Encore Match</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketsWon)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatchType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketsWon)
+            </td>
+            <td>
+                <a asp-controller="EncoreMatches" asp-action="Edit" asp-route-id="@item.EncoreMatchID">Edit</a> |
+                <a asp-controller="EncoreMatches" asp-action="Details" asp-route-id="@item.EncoreMatchID">Details</a> |
+                <a asp-controller="EncoreMatches" asp-action="Delete" asp-route-id="@item.EncoreMatchID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

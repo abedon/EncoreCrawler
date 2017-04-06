@@ -1,0 +1,36 @@
+@model ASPNETCore_Core.Models.EncoreMatch
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EncoreMatch</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MatchType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MatchType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Prize)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Prize)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketsWon)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TicketsWon)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.EncoreMatchID">Edit</a> |
+    <a asp-controller="Encores" asp-action="Details" asp-route-id="@Model.EncoreID">Back to Encore List</a>
+</div>

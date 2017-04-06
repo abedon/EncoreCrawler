@@ -1,0 +1,51 @@
+@model ASPNETCore_Core.Models.Encore
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Encore</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LottoType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LottoType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DrawDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DrawDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DrawType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DrawType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCashWon)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalCashWon)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WinninNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WinninNumber)
+        </dd>
+    </dl>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EncoreMatches, "EncoreMatches", new { EncoreID = @Model.EncoreID })
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.EncoreID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

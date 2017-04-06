@@ -1,0 +1,59 @@
+@model IEnumerable<ASPNETCore_Core.Models.Encore>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EncoreID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LottoType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DrawDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalCashWon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WinninNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EncoreID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LottoType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DrawDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCashWon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WinninNumber)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EncoreID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EncoreID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EncoreID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
