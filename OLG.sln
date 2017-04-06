@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3888061-4E13-4EC1-ABC5-0A2DCB785287}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F6C11750-7F8E-48F1-A191-96B41DDF3EA9}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		global_1json__JSONSchema = http://json.schemastore.org/global
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNETCore_NetFramework", "src\ASPNETCore_NetFramework\ASPNETCore_NetFramework.csproj", "{2ADDB5A8-FEAF-43BE-B466-9807ED6BD81D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encore", "src\ASPNETCore_Core\Encore.csproj", "{FC3C07FC-DB91-46E8-920A-FA940F39AEBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ADDB5A8-FEAF-43BE-B466-9807ED6BD81D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ADDB5A8-FEAF-43BE-B466-9807ED6BD81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ADDB5A8-FEAF-43BE-B466-9807ED6BD81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ADDB5A8-FEAF-43BE-B466-9807ED6BD81D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3C07FC-DB91-46E8-920A-FA940F39AEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3C07FC-DB91-46E8-920A-FA940F39AEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3C07FC-DB91-46E8-920A-FA940F39AEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3C07FC-DB91-46E8-920A-FA940F39AEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ADDB5A8-FEAF-43BE-B466-9807ED6BD81D} = {F3888061-4E13-4EC1-ABC5-0A2DCB785287}
+		{FC3C07FC-DB91-46E8-920A-FA940F39AEBB} = {F3888061-4E13-4EC1-ABC5-0A2DCB785287}
+	EndGlobalSection
+EndGlobal
